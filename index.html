@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>The Muscle Builders</title>
+    <link rel="icon" href="l.png">
+
+    <style>
+        @media (max-width:1000px) and (min-width:768px) {
+            .main-btn {
+                margin-left:13.5rem;
+            }
+        }
+        @media (max-width:1000px) {
+            .main-heading {
+                    text-align: center;
+                    margin-top:2rem;
+                }
+        }
+    </style>
+
+</head>
+
+<body class="bg-dark">
+
+    <!-- nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-black navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img class="mb-4" src="l.png" alt="" width="72" height="57">The
+                Muscle Builders </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-capitalize" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Our-services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#pricing">Our pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#cexampleModal">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">LogIn</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <img class="mb-4" src="l.png" alt="" width="72" height="57">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+
+                            <div class="form-check text-start my-3">
+                                <input class="form-check-input" type="checkbox" value="remember-me"
+                                    id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+                            <p class="mt-5 mb-3 text-body-secondary">© 2025–2026</p>
+                        </form>
+                    </main>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SexampleModalLabel">Please sign in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <main class="form-signin w-100 m-auto">
+                            <form>
+                                <img class="mb-4" src="l.png" alt="" width="72" height="57">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword">
+                                    <label for="floatingPassword">Confirm Password</label>
+                                </div>
+
+                                <div class="form-check text-start my-3">
+                                    <input class="form-check-input" type="checkbox" value="remember-me"
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                                <p class="mt-5 mb-3 text-body-secondary">© 2025–2026</p>
+                            </form>
+                        </main>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div class="modal fade" id="cexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <img class="mb-4" src="l.png" alt="" width="72" height="57">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Enter your Concern</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- hero -->
+    <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center  justify-content-center py-5 ">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="powerful-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-biceps-with-dumbbells-look-camera-with-confident-look-fire-art-concept.jpg"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="900" height="700" loading="lazy">
+            </div>
+            <div class="main-heading col-lg-6">
+                <h1 class="display-5 fw-bold text-light lh-1 mb-3">BUILD YOUR BODY & TRANSFORM YOUR LIFE</h1>
+                <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate
+                    iusto ipsam non quae accusantium hic explicabo perspiciatis quia ipsum quibusdam aperiam, maxime
+                    fugit fugiat eum quod dolor! Modi, recusandae!
+                </p>
+                <div class="main-btn d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-danger btn-lg px-4 me-md-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="Our-services">
+        <div class="container mt-5 border-top border-light">
+            <h1 class="text-light text-center fw-bold mb-5 mt-5"
+                style="font-size: 50px; font-weight: 900; text-align: center">Our Services</h1>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Yoga</strong>
+                            <h3 class="mb-2 text-dark">Yoga Classes</h3>
+                            <p class="card-text mb-auto text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Necessitatibus atque in est natus itaque ipsa, exercitationem optio.</p>
+                            <a href="#"
+                                class="icon-link gap-1 icon-link-hover stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                Continue reading
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="3921140.jpg" class="bd-placeholder-img" width="200" height="250">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">Zumba</strong>
+                            <h3 class="mb-2 text-dark">Zumba Classes</h3>
+                            <p class="mb-auto text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda,
+                                ullam, tempora veniam officia deserunt est.</p>
+                            <a href="#"
+                                class="icon-link gap-1 icon-link-hover stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                Continue reading
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="people-taking-part-dance-therapy-class.jpg" class="bd-placeholder-img" width="200"
+                                height="250">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">Weight</strong>
+                            <h3 class="mb-2 text-dark">Weight training</h3>
+                            <p class="card-text mb-auto text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.
+                                Necessitatibus atque in est natus itaque ipsa, exercitationem optio.</p>
+                            <a href="#"
+                                class="icon-link gap-1 icon-link-hover stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                Continue reading
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="powerful-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-background.jpg"
+                                class="bd-placeholder-img" width="200" height="250">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Swimming</strong>
+                            <h3 class="mb-2 text-dark">Swimming Classes</h3>
+                            <p class="mb-auto text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Assumenda,
+                                ullam, tempora veniam officia deserunt est.
+
+                            </p>
+                            <a href="#"
+                                class="icon-link gap-1 icon-link-hover stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                                Continue reading
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="fit-swimmer-training-swimming-pool-professional-male-swimmer-inside-swimming-pool.jpg"
+                                class="bd-placeholder-img" width="200" height="250">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container mt-5 border-top border-light">
+            <p class="text-light text-center mt-5" style="font-size: 50px;  text-align: center">Our Pricing</p>
+            <p class="text-light text-center  mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                dolor repudiandae maiores tenetur iste officia quae repellendus ipsa quasi.</p>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Base Plan</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$5<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>24/7 access</li>
+                                <li>Every equipment you need</li>
+                                <li>Diet Plan included</li>
+                                <li class="text-decoration-line-through">Personal Coach</li>
+                                <li class="text-decoration-line-through">Protein Pack included</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro Plan</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>24/7 access</li>
+                                <li>Every equipment you need</li>
+                                <li>Diet Plan included</li>
+                                <li>Personal Coach</li>
+                                <li class="text-decoration-line-through">Protein Pack included</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Premium Plan</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$29<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>24/7 access</li>
+                                <li>Every equipment you need</li>
+                                <li>Diet Plan included</li>
+                                <li>Personal Coach</li>
+                                <li>Protein Pack included</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="about">
+        <div class="container">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <img class="mb-2" src="l.png" alt="" width="35" height="30">
+                        <small class="d-block mb-3 text-light">© 2025–2026</small>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5 class="text-light">Features</h5>
+                        <ul class="list-unstyled text-small text-light">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Best Equipment</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Best Facility</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">24/7 Available</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5 class="text-light">Resources</h5>
+                        <ul class="list-unstyled text-small text-light">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipment
+                                    Available</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Diet Plan Available</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Protein Pack
+                                    Available</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5 class="text-light">About</h5>
+                        <ul class="list-unstyled text-small text-light">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
